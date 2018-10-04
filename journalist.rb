@@ -22,18 +22,19 @@ puts "#{classe.grep(/@[A-Z]/).count}" # recherche la majuscule entre A et Z comp
 # Question n°5
 puts "Combien contiennent une majuscule ?  "
 puts "#{classe.grep(/[A-Z]/).count}" # recherche le chiffre 0 à 9 dans chaque string et le compte
-
+#puts classe.map{|i| "'#{i}'"}.join("_")
 
 # Question n°6
 puts "Combien de _ dans tous les pseudos confondus ? "
-puts "#{classe.grep(/_/).count}"
+join = classe.join #pour transformer les strings en chaînes de caractères
+puts "#{join.scan(/_/).count}".to_i
 
 #puts classe.scan(/_/).count
 #puts "#{classe.grep(/_/).count}"
-
+#puts "#{classe.grep(/_/).count}".to_s
 #classe.count {|x| ('_').include?(x[0])}
 #puts "#{classe.grep(/[_]/).count.each_char}" # rrecherche le terme _ et le compte 
 
 # Question n°7
 puts "Trie la liste de handle par ordre alphabétique "
-puts classe.sort_by {|aplhabéthique| aplhabéthique}
+#puts classe.sort_by {|aplhabéthique| aplhabéthique}
