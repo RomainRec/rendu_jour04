@@ -37,4 +37,4 @@ puts "#{join.scan(/_/).count}".to_i
 
 # Question n°7
 puts "Trie la liste de handle par ordre alphabétique "
-#puts classe.sort_by {|aplhabéthique| aplhabéthique}
+puts classe.sort_by {|aplhabéthique| aplhabéthique}
